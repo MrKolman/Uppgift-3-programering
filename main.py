@@ -3,15 +3,13 @@ counter = 0
 
 while True:
     
-    counter = counter + 1
+    counter = counter +1
     if(number %2) == 0:
-        number == number/2
+        number = number/2
     
+    elif (number == 1):
+        print("Det är", counter, "Steg för att komma till 1")
+        break
+
     else:
-        number == number*3+1
-
-    elif:
-        number != 1
-
-
-print(counter)
+        number = number*3+1
