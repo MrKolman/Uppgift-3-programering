@@ -1,14 +1,19 @@
-number = int(input("Vad ska ditt värde vara?"))
+import colorama
+from colorama import Fore
+
+colorama.init()
+
+number = int(input(Fore.RED + "Vad ska ditt värde vara? " + Fore.YELLOW))
 counter = 0
 
 while True:
     
-    counter = counter +1
+    counter += 1
     if(number %2) == 0:
         number = number/2
     
     elif (number == 1):
-        print("Det är", counter, "Steg för att komma till 1")
+        print(Fore.GREEN + "Det är", counter, "steg för att den ska hamna i en loop")
         break
 
     else:
