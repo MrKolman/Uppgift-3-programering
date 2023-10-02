@@ -13,7 +13,7 @@ while True:
         number = number/2
     
     elif (number == 1):
-        print(Fore.GREEN + "Det är", counter, "steg för att den ska hamna i en loop")
+        print(Fore.GREEN + "Det är", counter, "steg för att den ska hamna i en loop") 
         break
 
     else:
