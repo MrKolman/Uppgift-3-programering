@@ -1,10 +1,12 @@
-import colorama
-from colorama import Fore
 
-colorama.init()
-
-number = int(input(Fore.RED + "Vad ska ditt värde vara? " + Fore.YELLOW))
+times = int(input("Hur många tal skall beräknas?"))
 counter = 0
+
+while(times > 0):
+
+    times -= 1
+    number = int(input("Vad ska ditt värde vara? "))
+
 
 while True:
     
@@ -15,7 +17,7 @@ while True:
         number = number/2
     
     elif (number == 1):
-        print(Fore.GREEN + "Det är", trueCounter, "steg för att den ska hamna i en loop") 
+        print("Det är", trueCounter, "steg för att den ska hamna i en loop") 
         break
 
     else:
